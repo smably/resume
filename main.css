@@ -23,6 +23,16 @@ header {
   background-color: #2255AA;
 }
 
+header a, header a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header a:hover, header a:active {
+  border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
+}
+
+
 header, #header-outside-container {
   height: 208px;
 }
@@ -165,5 +175,5 @@ main section:first-child {
 
 .bottom-border {
   border-bottom: #6197F2 3px solid;
-  padding: 0 1px 2px 1px;
+  padding-bottom: 2px;
 }
