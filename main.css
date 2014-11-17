@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 38pt;
   font-weight: 500;
   margin: 0;
@@ -27,10 +27,6 @@ h2, h3, h4 {
   color: #555;
 }
 
-h2 {
-  padding: 10px 0;
-}
-
 h2.contact-heading {
   display: none;
 }
@@ -38,7 +34,7 @@ h2.contact-heading {
 ul.contact {
   margin: 5px 0;
   list-style: none;
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 200;
   height: 25px;
   font-size: 12pt;
@@ -66,12 +62,11 @@ header #name {
 }
 
 #name h2 {
-  color: #FFF;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-size: 16pt;
   letter-spacing: 1.8px;
-  padding-top: 3px;
-  padding-bottom: 20px;
+  padding: 2px 0 20px 0;
 }
 
 main {
@@ -80,12 +75,36 @@ main {
   margin: 0 auto;
   clear: both;
   font-weight: 200;
+  padding-bottom: 40px;
+}
+
+main h2 {
+  margin-bottom: 15px;
 }
 
 main ul {
+  margin-top: 10px;
   line-height: 1.8;
 }
 
-header section, main section {
-  padding: 10px;
+main section {
+  padding: 0 20px 0 20px;
+}
+
+main section:first-child {
+  padding-top: 25px;
+}
+
+.section-divider.fa {
+  display: block;
+  width: 100%;
+  color: #DDD;
+  font-size: 16pt;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottom-border {
+  border-bottom: #6197F2 3px solid;
+  padding-bottom: 2px;
 }
