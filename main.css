@@ -53,15 +53,21 @@ ul.contact li {
   text-align: center;
 }
 
-header #name {
-  width: 750px;
+#header-outside-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
   height: 210px;
-  margin: 0 auto;
+}
+
+#header-inside-container {
+  margin: 0 30px;
   background-color: #2A62BF;
+  height: 100%;
   text-align: center;
 }
 
-#name h2 {
+header h2 {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 16pt;
@@ -70,32 +76,44 @@ header #name {
 }
 
 main {
-  background-color: #FFFFFF;
-  width: 750px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
   clear: both;
   font-weight: 200;
+}
+
+#main-container {
+  background-color: #FFFFFF;
+  margin: 0 30px;
   padding-bottom: 20px;
 }
 
 main h2 {
+  letter-spacing: -0.5px;
   margin-bottom: 15px;
 }
 
 main h3 {
+  letter-spacing: -0.2px;
   margin-top: 20px;
   margin-bottom: -10px;
 }
 
 main h4 {
+  letter-spacing: -0.1px;
   margin-top: 15px;
   margin-bottom: -5px;
 }
 
 main ul {
   margin-top: 10px;
+  line-height: 1.4;
   letter-spacing: 0.1px;
-  line-height: 1.8;
+}
+
+main ul li {
+  padding-bottom: 4px;
 }
 
 main section {
