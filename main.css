@@ -19,7 +19,7 @@ h1 {
   font-size: 38pt;
   font-weight: 500;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 56px;
   text-shadow: 1px 2px 0 rgba(0,0,0, 0.2);
 }
 
@@ -66,7 +66,7 @@ header #name {
   text-transform: uppercase;
   font-size: 16pt;
   letter-spacing: 1.8px;
-  padding: 2px 0 20px 0;
+  padding: 2px 0 24px 0;
 }
 
 main {
@@ -75,15 +75,26 @@ main {
   margin: 0 auto;
   clear: both;
   font-weight: 200;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 main h2 {
   margin-bottom: 15px;
 }
 
+main h3 {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+main h4 {
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
 main ul {
   margin-top: 10px;
+  letter-spacing: 0.1px;
   line-height: 1.8;
 }
 
@@ -102,6 +113,7 @@ main section:first-child {
   font-size: 16pt;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 2px;
 }
 
 .bottom-border {
