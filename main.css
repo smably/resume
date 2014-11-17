@@ -23,36 +23,6 @@ h1 {
   text-shadow: 1px 2px 0 rgba(0,0,0, 0.2);
 }
 
-h2, h3, h4 {
-  color: #555;
-}
-
-h2.contact-heading {
-  display: none;
-}
-
-ul.contact {
-  margin: 5px 0;
-  list-style: none;
-  color: #FFFFFF;
-  font-weight: 200;
-  height: 25px;
-  font-size: 12pt;
-  letter-spacing: 0.2px;
-}
-
-ul.contact .fa:before {
-  margin-right: 5px;
-  font-size: 14pt;
-  vertical-align: -5%;
-}
-
-ul.contact li {
-  width: 33%;
-  float: left;
-  text-align: center;
-}
-
 #header-outside-container {
   width: 100%;
   max-width: 900px;
@@ -61,6 +31,7 @@ ul.contact li {
 }
 
 #header-inside-container {
+  min-width: 520px;
   margin: 0 30px;
   background-color: #2A62BF;
   height: 100%;
@@ -75,38 +46,83 @@ header h2 {
   padding: 2px 0 24px 0;
 }
 
+h2.contact-heading {
+  display: none;
+}
+
+ul.contact {
+  margin: 5px 0;
+  padding: 0 20px;
+  list-style: none;
+  color: #FFFFFF;
+  font-weight: 200;
+  height: 25px;
+  font-size: 12pt;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+ul.contact .fa:before {
+  margin-right: 6px;
+  font-size: 14pt;
+  vertical-align: -5%;
+}
+
+ul.contact .phone-dot:before {
+  margin: 0 3px;
+  font-size: 3pt;
+  vertical-align: 90%;
+}
+
+ul.contact li {
+  width: 33.3%;
+  min-width: 160px;
+  float: left;
+  text-align: center;
+}
+
 main {
   width: 100%;
   max-width: 900px;
   margin: auto;
   clear: both;
   font-weight: 200;
+  font-size: 14pt;
 }
 
 #main-container {
+  min-width: 520px;
   background-color: #FFFFFF;
   margin: 0 30px;
   padding-bottom: 20px;
 }
 
+main h2, main h3, main h4 {
+  font-weight: 400;
+}
+
 main h2 {
+  color: #555;
+  font-size: 18pt;
   letter-spacing: -0.5px;
   margin-bottom: 15px;
 }
 
 main h3 {
+  color: #666;
   letter-spacing: -0.2px;
   margin-top: 20px;
   margin-bottom: -10px;
 }
 
 main h4 {
+  color: #666;
   letter-spacing: -0.1px;
   margin-top: 15px;
   margin-bottom: -5px;
 }
 
-main ul {
+main p, main ul {
   margin-top: 10px;
   line-height: 1.4;
   letter-spacing: 0.1px;
@@ -130,8 +146,8 @@ main section:first-child {
   color: #DDD;
   font-size: 16pt;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 2px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .bottom-border {
