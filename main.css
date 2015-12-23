@@ -1,3 +1,8 @@
+/*
+  Oh geez, this is a bit of a mess, isn't it?
+  Alas, it was whipped up on short notice and is due for a refactor.
+ */
+
 html {
   font-size: 14pt;
 }
@@ -192,12 +197,21 @@ main section:first-child {
     height: 188px;
   }
 
+  body, header, #header-inside-container {
+    color: #000;
+    background-color: #FFF;
+  }
+
   #main-container {
     padding-bottom: 0;
   }
 
   .section-divider.fa {
     display: none;
+  }
+
+  main h2, main h3, main h4 {
+    color: #000;
   }
 
   main h2 {
@@ -218,5 +232,14 @@ main section:first-child {
 
   .atomic {
     page-break-inside: avoid;
+  }
+
+  h1, header h2, ul.contact, header a, header a:visited {
+    color: #2A62BF;
+    text-shadow: none;
+  }
+
+  h1 {
+    padding-top: 36px;
   }
 }
