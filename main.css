@@ -1,3 +1,7 @@
+html {
+  font-size: 14pt;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +43,7 @@ header, #header-outside-container {
 
 h1 {
   color: #FFFFFF;
-  font-size: 38pt;
+  font-size: 2.7rem;
   font-weight: 500;
   margin: 0;
   padding-top: 52px;
@@ -63,7 +67,7 @@ h1 {
 header h2 {
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 16pt;
+  font-size: 1.14rem;
   letter-spacing: 1.8px;
   padding: 2px 0 26px 0;
 }
@@ -79,20 +83,20 @@ ul.contact {
   color: #FFFFFF;
   font-weight: 200;
   height: 25px;
-  font-size: 12pt;
+  font-size: 0.86rem;
   letter-spacing: 0.2px;
   white-space: nowrap;
 }
 
 ul.contact .fa:before {
   margin-right: 6px;
-  font-size: 14pt;
+  font-size: 1rem;
   vertical-align: -5%;
 }
 
 ul.contact .phone-dot:before {
   margin: 0 3px;
-  font-size: 3pt;
+  font-size: 0.2rem;
   vertical-align: 90%;
 }
 
@@ -109,7 +113,7 @@ main {
   margin: auto;
   clear: both;
   font-weight: 200;
-  font-size: 14pt;
+  font-size: 1rem;
 }
 
 #main-container {
@@ -125,7 +129,7 @@ main h2, main h3, main h4 {
 
 main h2 {
   color: #555;
-  font-size: 18pt;
+  font-size: 1.28rem;
   margin-bottom: 15px;
 }
 
@@ -167,7 +171,7 @@ main section:first-child {
   display: block;
   width: 100%;
   color: #DDD;
-  font-size: 16pt;
+  font-size: 1.14rem;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -176,4 +180,43 @@ main section:first-child {
 .bottom-border {
   border-bottom: #6197F2 3px solid;
   padding-bottom: 2px;
+}
+
+
+@media print {
+  html {
+    font-size: 12pt;
+  }
+
+  header, #header-outside-container {
+    height: 188px;
+  }
+
+  #main-container {
+    padding-bottom: 0;
+  }
+
+  .section-divider.fa {
+    display: none;
+  }
+
+  main h2 {
+    margin-top: 20px;
+  }
+
+  main h3 {
+    margin-bottom: -5px;
+  }
+
+  main h4 {
+    margin-top: 10px;
+  }
+
+  main section:first-child {
+    padding-top: 0;
+  }
+
+  .atomic {
+    page-break-inside: avoid;
+  }
 }
