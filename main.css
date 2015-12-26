@@ -87,14 +87,20 @@ ul.contact {
   white-space: nowrap;
 }
 
-ul.contact .fa:before {
+ul.contact .fa {
   margin-right: 0.3rem;
+}
+
+ul.contact .fa:before {
   font-size: 0.9rem;
   vertical-align: -0.05rem;
 }
 
-ul.contact .phone-dot:before {
+ul.contact .phone-dot {
   margin: 0 0.1rem;
+}
+
+ul.contact .phone-dot:before {
   font-size: 0.2rem;
   vertical-align: 0.2rem;
 }
@@ -108,7 +114,7 @@ ul.contact li {
 main {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto 2em;
+  margin: 0 auto 2rem;
   clear: both;
   font-weight: 300;
   font-size: 1rem;
@@ -121,7 +127,7 @@ main {
 }
 
 main section {
-  padding: 0 2em;
+  padding: 0 2rem;
 }
 
 main section:first-child {
@@ -160,7 +166,7 @@ main p, main ul {
 }
 
 main ul {
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 
 main p, main ul li {
@@ -178,7 +184,7 @@ main p, main ul li {
 }
 
 .bottom-border {
-  border-bottom: #6197F2 0.2rem solid;
+  border-bottom: #6197F2 0.18rem solid;
 }
 
 h2.bottom-border {
@@ -238,16 +244,33 @@ h2.bottom-border {
     text-align: left;
   }
 
+  ul.contact .fa-envelope,
+  ul.contact .fa-globe,
+  ul.contact .fa-phone {
+    margin-right: 0;
+    min-width: 1.25rem;
+  }
+
+  ul.contact .fa-globe {
+    position: relative;
+    left: 0.05rem;
+  }
+
+  ul.contact .fa-phone {
+    position: relative;
+    left: 0.1rem;
+  }
+
   #main-container {
     min-width: 0;
   }
 
   main section {
-    padding: 0 1em;
+    padding: 0 1rem;
   }
 
   main ul {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
   }
 
   .section-divider.fa {
@@ -281,10 +304,6 @@ h2.bottom-border {
     text-shadow: none;
   }
 
-  h1 {
-    padding-top: 2rem;
-  }
-
   main.bottom-border {
     border: none;
     margin-bottom: 0;
@@ -299,7 +318,7 @@ h2.bottom-border {
   }
 
   main section {
-    padding: 0 3em;
+    padding: 0 3rem;
   }
 
   main h2, main h3, main h4 {
