@@ -248,11 +248,9 @@ h2.bottom-border {
     text-align: left;
   }
 
-  ul.contact .fa-envelope,
-  ul.contact .fa-globe,
-  ul.contact .fa-phone {
+  ul.contact .contact-icon {
     margin-right: 0;
-    min-width: 1.25rem;
+    width: 1.25rem;
   }
 
   ul.contact .fa-globe {
