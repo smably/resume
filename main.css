@@ -87,6 +87,10 @@ ul.contact {
   white-space: nowrap;
 }
 
+.fa {
+  cursor: default;
+}
+
 ul.contact .fa {
   margin-right: 0.3rem;
 }
