@@ -89,15 +89,15 @@ ul.contact .phone-number {
 }
 
 ul.contact .phone-dot {
-  background-color: currentColor;
+  border: currentColor 0.1rem solid;
+  border-radius: 50%;
   display: inline-block;
-  height: 0.15rem;
+  height: 0;
   margin-bottom: 0;
   margin-left: 0.15rem;
   margin-right: 0.15rem;
   margin-top: 0.1rem;
-  width: 0.15rem;
-  border-radius: 50%;
+  width: 0;
 }
 
 ul.contact li {
@@ -286,13 +286,17 @@ h2.bottom-border {
     font-size: 16px;
   }
 
-  header {
-    color: #2A62BF;
-    height: 10rem;
-  }
-
   body, header, #header-container {
     background-color: #FFF;
+  }
+
+  header {
+    color: #2A62BF;
+    height: 9rem;
+  }
+
+  #header-container {
+    flex-grow: 1;
   }
 
   h1 {
@@ -306,6 +310,7 @@ h2.bottom-border {
 
   main {
     color: #000;
+    display: block; /* Firefox doesn't break pages properly inside flex containers :'( */
     margin-bottom: 0;
   }
 
@@ -319,8 +324,7 @@ h2.bottom-border {
   }
 
   main section {
-    padding: 0 3rem;
-    page-break-after: auto;
+    padding: 0 2rem;
   }
 
   main section:first-child {
