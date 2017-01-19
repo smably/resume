@@ -25,13 +25,14 @@ body {
 
 header {
   background-color: #25A;
+  color: #FFF;
   display: flex;
   height: 12rem;
   justify-content: center;
 }
 
 header a, header a:visited {
-  color: #FFF;
+  color: currentColor;
   text-decoration: none;
   border-bottom: transparent 1px solid;
 }
@@ -41,7 +42,6 @@ header a:hover, header a:active {
 }
 
 h1 {
-  color: #FFF;
   font-size: 2.75rem;
   font-weight: 400;
   margin-top: auto;
@@ -58,7 +58,6 @@ h1 {
 }
 
 header h2 {
-  color: #FFF;
   font-size: 1.15rem;
   letter-spacing: 0.1rem;
   margin-bottom: auto;
@@ -72,7 +71,6 @@ h2.contact-heading {
 
 ul.contact {
   align-self: stretch;
-  color: #FFF;
   display: flex;
   font-size: 0.85rem;
   font-weight: 300;
@@ -80,7 +78,7 @@ ul.contact {
   justify-content: space-around;
   letter-spacing: 0.015rem;
   list-style: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   padding: 0 1rem;
   white-space: nowrap;
 }
@@ -111,10 +109,15 @@ ul.contact li {
   padding-right: 1rem;
 }
 
-ul.contact li svg {
+ul.contact .contact-icon {
+  display: flex;
+  justify-content: center;
+  margin-right: 0.3rem;
+}
+
+ul.contact .contact-icon svg {
   height: 0.9rem;
   padding-top: 0.1rem;
-  padding-right: 0.3rem;
 }
 
 main {
@@ -202,21 +205,12 @@ h2.bottom-border {
 }
 
 @media only screen and (max-width: 900px) {
-  #header-container {
-    margin: 0;
-  }
-
   main {
-    max-width: none;
-  }
-
-  main.bottom-border {
-    border: none;
     margin-bottom: 0;
   }
 
-  #main-container {
-    margin: 0;
+  #main-container.bottom-border {
+    border: none;
   }
 }
 
@@ -256,18 +250,11 @@ h2.bottom-border {
   }
 
   ul.contact .contact-icon {
-    margin-right: 0;
     width: 1.25rem;
   }
 
-  ul.contact .fa-globe {
-    left: 0.05rem;
-    position: relative;
-  }
-
-  ul.contact .fa-phone {
-    left: 0.1rem;
-    position: relative;
+  ul.contact .contact-icon svg {
+    padding: 0;
   }
 
   #main-container {
@@ -300,20 +287,16 @@ h2.bottom-border {
   }
 
   header {
+    color: #2A62BF;
     height: 10rem;
   }
 
   body, header, #header-container {
     background-color: #FFF;
-    color: #000;
   }
 
   h1 {
     padding-top: 0;
-  }
-
-  h1, header h2, ul.contact, header a, header a:visited {
-    color: #2A62BF;
     text-shadow: none;
   }
 
@@ -322,6 +305,7 @@ h2.bottom-border {
   }
 
   main {
+    color: #000;
     margin-bottom: 0;
   }
 
