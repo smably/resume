@@ -8,8 +8,8 @@ html {
 }
 
 ::selection {
-  color: #FFF;
   background-color: #6197F2;
+  color: #FFF;
 }
 
 header ::selection {
@@ -17,13 +17,16 @@ header ::selection {
 }
 
 body {
-  font-family: "Lato", sans-serif;
   background-color: #F4F4F4;
   color: #808080;
+  font-family: "Lato", sans-serif;
 }
 
 header {
   background-color: #25A;
+  display: flex;
+  height: 12rem;
+  justify-content: center;
 }
 
 header a, header a:visited {
@@ -35,37 +38,30 @@ header a:hover, header a:active {
   border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
 }
 
-
-header, #header-outside-container {
-  height: 12rem;
-}
-
 h1 {
   color: #FFF;
   font-size: 2.75rem;
   font-weight: 400;
-  padding-top: 3rem;
+  margin-top: auto;
+  padding-top: 1rem;
   text-shadow: 1px 2px 0 rgba(0,0,0, 0.2);
 }
 
-#header-outside-container {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-}
-
-#header-inside-container {
+#header-container {
+  align-items: center;
   background-color: #2A62BF;
-  height: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 900px;
 }
 
 header h2 {
   color: #FFF;
-  text-transform: uppercase;
   font-size: 1.15rem;
   letter-spacing: 0.1rem;
-  padding: 0.1rem 0 2.25rem 0;
+  margin-bottom: auto;
+  margin-top: 0.1rem;
+  text-transform: uppercase;
 }
 
 h2.contact-heading {
@@ -73,13 +69,17 @@ h2.contact-heading {
 }
 
 ul.contact {
-  padding: 0 1rem;
-  list-style: none;
+  align-self: stretch;
   color: #FFF;
+  display: flex;
+  font-size: 0.85rem;
   font-weight: 300;
   height: 1rem;
-  font-size: 0.85rem;
+  justify-content: space-around;
   letter-spacing: 0.015rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
   white-space: nowrap;
 }
 
@@ -106,23 +106,28 @@ ul.contact .phone-dot:before {
 }
 
 ul.contact li {
-  width: 33.3%;
-  float: left;
-  text-align: center;
+  align-items: baseline;
+  display: flex;
+  flex: 1 1 9rem;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 main {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  clear: both;
-  font-weight: 300;
+  display: flex;
   font-size: 1rem;
+  font-weight: 300;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 #main-container {
   background-color: #FFF;
-  padding: 0.5rem 0 2rem 0;
+  flex: 0 1 900px;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
 }
 
 main section {
@@ -147,21 +152,21 @@ main h3 {
   color: #606060;
   font-size: 1.15rem;
   font-style: italic;
-  margin-top: 1rem;
   margin-bottom: -0.5rem;
+  margin-top: 1rem;
 }
 
 main h4 {
   color: #707070;
   font-size: 1rem;
-  margin-top: 0.75rem;
   margin-bottom: -0.25rem;
+  margin-top: 0.75rem;
 }
 
 main p, main ul {
-  margin-top: 0.5rem;
-  line-height: 1.4;
   letter-spacing: 0.01rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 main ul {
@@ -173,13 +178,13 @@ main p, main ul li {
 }
 
 .section-divider.fa {
-  display: block;
-  width: 100%;
   color: #DDD;
+  display: block;
   font-size: 1.15rem;
-  text-align: center;
-  margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 .bottom-border {
@@ -191,11 +196,7 @@ h2.bottom-border {
 }
 
 @media only screen and (max-width: 900px) {
-  #header-outside-container {
-    max-width: none;
-  }
-
-  #header-inside-container {
+  #header-container {
     margin: 0;
   }
 
@@ -219,33 +220,33 @@ h2.bottom-border {
   }
 }
 
-@media only screen and (max-width: 540px) {
-  h1 {
-    padding-top: 2rem;
-  }
-
-  header h2 {
-    padding-bottom: 1.5rem;
-  }
-
-  header, #header-outside-container {
+@media only screen and (max-width: 500px) {
+  header {
     height: 14rem;
   }
 
-  #header-inside-container {
-    min-width: 0;
-    text-align: left;
+  h1 {
+    padding-top: 0;
+  }
+
+  #header-container {
+    align-items: flex-start;
     padding-left: 1rem;
   }
 
   ul.contact {
+    align-self: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 0.75rem;
     padding: 0;
   }
 
   ul.contact li {
-    float: none;
-    margin: 0.5rem 0;
-    text-align: left;
+    flex: 0;
+    margin: 0.25rem 0;
+    padding: 0;
+    justify-content: flex-start;
   }
 
   ul.contact .contact-icon {
@@ -254,13 +255,13 @@ h2.bottom-border {
   }
 
   ul.contact .fa-globe {
-    position: relative;
     left: 0.05rem;
+    position: relative;
   }
 
   ul.contact .fa-phone {
-    position: relative;
     left: 0.1rem;
+    position: relative;
   }
 
   #main-container {
@@ -292,13 +293,17 @@ h2.bottom-border {
     font-size: 16px;
   }
 
-  header, #header-outside-container {
+  header {
     height: 10rem;
   }
 
-  body, header, #header-inside-container {
-    color: #000;
+  body, header, #header-container {
     background-color: #FFF;
+    color: #000;
+  }
+
+  h1 {
+    padding-top: 0;
   }
 
   h1, header h2, ul.contact, header a, header a:visited {
@@ -306,12 +311,16 @@ h2.bottom-border {
     text-shadow: none;
   }
 
-  main.bottom-border {
-    border: none;
+  ul.contact {
+    margin-bottom: 0;
+  }
+
+  main {
     margin-bottom: 0;
   }
 
   #main-container {
+    border: none;
     padding-bottom: 0;
   }
 
@@ -321,6 +330,10 @@ h2.bottom-border {
 
   main section {
     padding: 0 3rem;
+  }
+
+  main section:first-child {
+    padding-top: 0;
   }
 
   main h2, main h3, main h4 {
