@@ -307,6 +307,7 @@ h2.bottom-border {
   }
 
   #header-container {
+    box-shadow: none;
     flex-grow: 1;
   }
 
@@ -327,6 +328,7 @@ h2.bottom-border {
 
   #main-container {
     border: none;
+    box-shadow: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
