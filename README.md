@@ -1,6 +1,6 @@
 # Responsive Resume
 
-On the web at http://www.smably.ca/resume/.
+On the web at https://www.smably.ca/resume/.
 
 ## Local dev
 
