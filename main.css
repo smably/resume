@@ -9,16 +9,16 @@ html {
 }
 
 ::selection {
-  background-color: #6197F2;
-  color: #FFF;
+  background-color: #6197f2;
+  color: #fff;
 }
 
 header ::selection {
-  background-color: #2A62BF;
+  background-color: #2a62bf;
 }
 
 body {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 80 40'%3E%3Cpath fill='%23FFF' fill-opacity='.4' fill-rule='evenodd' d='M2.01 39.976c.02-4.594 1.786-9.182 5.302-12.687.475-.478.97-.92 1.483-1.33v9.77L4.54 39.977H2.01zm5.374 0L23.842 23.57c.687 5.35-1.03 10.95-5.154 15.06-.483.482-.987.93-1.508 1.346H7.384zm-7.384 0c.018-5.107 1.982-10.208 5.89-14.104 5.263-5.247 12.718-6.978 19.428-5.192 1.783 6.658.07 14.053-5.137 19.296H0zm10.806-15.41c3.537-2.116 7.644-2.92 11.614-2.415L10.806 33.73v-9.164zM65.25.75C58.578-1.032 51.164.694 45.93 5.93c-5.236 5.234-6.962 12.648-5.18 19.32 6.672 1.782 14.086.056 19.32-5.18 5.236-5.234 6.962-12.648 5.18-19.32zM43.632 23.783c5.338.683 10.925-1.026 15.025-5.126 4.1-4.1 5.81-9.687 5.126-15.025l-20.15 20.15zm7.186-19.156c3.518-2.112 7.602-2.915 11.55-2.41l-11.55 11.55v-9.14zm-3.475 2.716c-4.1 4.1-5.81 9.687-5.126 15.025l6.6-6.6V6.02c-.51.41-1 .85-1.474 1.323zM.07 0C.066 1.766.29 3.533.75 5.25c6.672 1.782 14.086.056 19.32-5.18l.072-.07H.072zm17.087 0C13.25 3.125 8.345 4.386 3.632 3.783L7.414 0h9.743zM2.07 0c-.002.79.047 1.582.147 2.368L4.587 0H2.07z'/%3E%3C/svg%3E ");
   background-position: calc(50% + 40px) 8px;
   color: #808080;
@@ -26,22 +26,24 @@ body {
 }
 
 header {
-  background-color: #25A;
+  background-color: #25a;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 80 40'%3E%3Cpath fill='%232A62BF' fill-opacity='.4' fill-rule='evenodd' d='M2.01 39.976c.02-4.594 1.786-9.182 5.302-12.687.475-.478.97-.92 1.483-1.33v9.77L4.54 39.977H2.01zm5.374 0L23.842 23.57c.687 5.35-1.03 10.95-5.154 15.06-.483.482-.987.93-1.508 1.346H7.384zm-7.384 0c.018-5.107 1.982-10.208 5.89-14.104 5.263-5.247 12.718-6.978 19.428-5.192 1.783 6.658.07 14.053-5.137 19.296H0zm10.806-15.41c3.537-2.116 7.644-2.92 11.614-2.415L10.806 33.73v-9.164zM65.25.75C58.578-1.032 51.164.694 45.93 5.93c-5.236 5.234-6.962 12.648-5.18 19.32 6.672 1.782 14.086.056 19.32-5.18 5.236-5.234 6.962-12.648 5.18-19.32zM43.632 23.783c5.338.683 10.925-1.026 15.025-5.126 4.1-4.1 5.81-9.687 5.126-15.025l-20.15 20.15zm7.186-19.156c3.518-2.112 7.602-2.915 11.55-2.41l-11.55 11.55v-9.14zm-3.475 2.716c-4.1 4.1-5.81 9.687-5.126 15.025l6.6-6.6V6.02c-.51.41-1 .85-1.474 1.323zM.07 0C.066 1.766.29 3.533.75 5.25c6.672 1.782 14.086.056 19.32-5.18l.072-.07H.072zm17.087 0C13.25 3.125 8.345 4.386 3.632 3.783L7.414 0h9.743zM2.07 0c-.002.79.047 1.582.147 2.368L4.587 0H2.07z'/%3E%3C/svg%3E ");
   background-position: calc(50% + 40px) 8px;
-  color: #FFF;
+  color: #fff;
   display: flex;
   height: 12rem;
   justify-content: center;
 }
 
-header a, header a:visited {
+header a,
+header a:visited {
   color: currentColor;
   text-decoration: none;
   border-bottom: transparent 1px solid;
 }
 
-header a:hover, header a:active {
+header a:hover,
+header a:active {
   border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
 }
 
@@ -55,7 +57,7 @@ h1 {
 
 #header-container {
   align-items: center;
-  background-color: #2A62BF;
+  background-color: #2a62bf;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -134,13 +136,25 @@ main {
 }
 
 #main-container {
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   flex: 0 1 900px;
   margin-bottom: 2rem;
   margin-top: 0;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
+}
+
+main a,
+main a:visited {
+  color: #505050;
+  text-decoration: none;
+  border-bottom: #a0a0a0 0.12rem solid;
+}
+
+main a:hover,
+main a:active {
+  border-bottom: #6197f2 0.12rem solid;
 }
 
 main section {
@@ -151,7 +165,9 @@ main section:first-child {
   padding-top: 1.5rem;
 }
 
-main h2, main h3, main h4 {
+main h2,
+main h3,
+main h4 {
   font-weight: 400;
 }
 
@@ -176,7 +192,8 @@ main h4 {
   margin-top: 0.75rem;
 }
 
-main p, main ul {
+main p,
+main ul {
   letter-spacing: 0.01rem;
   line-height: 1.4;
   margin-top: 0.5rem;
@@ -186,7 +203,8 @@ main ul {
   padding-left: 2rem;
 }
 
-main p, main ul li {
+main p,
+main ul li {
   padding-bottom: 0.2rem;
 }
 
@@ -204,7 +222,7 @@ main p, main ul li {
 }
 
 .bottom-border {
-  border-bottom: #6197F2 0.18rem solid;
+  border-bottom: #6197f2 0.18rem solid;
 }
 
 h2.bottom-border {
@@ -297,12 +315,14 @@ h2.bottom-border {
     font-size: 16px;
   }
 
-  body, header, #header-container {
-    background-color: #FFF;
+  body,
+  header,
+  #header-container {
+    background-color: #fff;
   }
 
   header {
-    color: #2A62BF;
+    color: #2a62bf;
     height: 9rem;
   }
 
@@ -337,6 +357,12 @@ h2.bottom-border {
     display: none;
   }
 
+  main a,
+  main a:visited {
+    color: currentColor;
+    border-bottom: none;
+  }
+
   main section {
     padding: 0 2rem;
   }
@@ -345,7 +371,9 @@ h2.bottom-border {
     padding-top: 0;
   }
 
-  main h2, main h3, main h4 {
+  main h2,
+  main h3,
+  main h4 {
     color: #000;
   }
 
